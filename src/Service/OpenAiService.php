@@ -28,7 +28,7 @@ class OpenAiService
             self::OPEN_AI_API_URL . 'chat/completions',
             [
                 'headers' => [
-                    'Authorization' => 'Bearer ' . $this->container->getParameter('OPEN_AI_API_KEY')
+                    'Authorization' => 'Bearer ' . $this->container->getParameter('open_ai_api_key')
                 ],
                 'json' => [
                     'model' => 'gpt-4o-mini',
