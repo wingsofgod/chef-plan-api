@@ -3,6 +3,7 @@
 namespace App\Service;
 
 use Symfony\Component\DependencyInjection\ContainerInterface;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Symfony\Contracts\HttpClient\HttpClientInterface;
 
 class OpenAiService
@@ -43,6 +44,6 @@ class OpenAiService
             preg_match($pattern, $content, $result);
             return json_decode($result[1], true);
         }
-        return [];
+        throw new NotFoundHttpException('cooks');
     }
 }
