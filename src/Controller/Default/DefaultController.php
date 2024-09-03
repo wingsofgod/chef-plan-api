@@ -9,7 +9,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
 
-#[Route('/api/default', name: 'publicCooks', methods: [Request::METHOD_GET])]
+#[Route('/api/default', name: 'default', methods: [Request::METHOD_GET])]
 class DefaultController extends AbstractController
 {
     public function __construct(protected OpenAiService $openAiService)
