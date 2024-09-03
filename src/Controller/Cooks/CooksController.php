@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Controller;
+namespace App\Controller\Cooks;
 
 use App\Dto\Param\Public\PublicCooksParam;
 use App\Service\OpenAiService;
