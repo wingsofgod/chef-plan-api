@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Controller\Cooks;
+namespace App\Controller\Default;
 
 use App\Service\OpenAiService;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
